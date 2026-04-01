@@ -706,7 +706,7 @@
         'Let me know what you think.'
       ].join('\n');
       previewBox.value = msg;
-      if(previewWa) previewWa.href = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+      if(previewWa) previewWa.href = `https://wa.me/?text=${encodeURIComponent(msg)}`;
     }
   }
 
@@ -775,7 +775,7 @@
         '',
         'Let me know what you think.'
       ].join('\n');
-      if(wa) wa.href = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+      if(wa) wa.href = `https://wa.me/?text=${encodeURIComponent(msg)}`;
       const priceBox = document.querySelector('#priceBox');
       const breakdown = document.querySelector('#priceBreakdown');
       if(breakdown){
@@ -808,7 +808,7 @@
         d.email ? `Email: ${d.email}` : '',
         d.notes ? `Notes: ${d.notes}` : ''
       ].filter(Boolean).join('\n');
-      if(wa) wa.href = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+      if(wa) wa.href = `https://wa.me/?text=${encodeURIComponent(msg)}`;
       if(resultBox) resultBox.classList.add('active');
     }
   });
